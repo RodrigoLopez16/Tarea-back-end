@@ -6,7 +6,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
 
-@Table(name = "'category'")
+@Table(name = "`category`")
 @Entity
 public class Category {
     @Id

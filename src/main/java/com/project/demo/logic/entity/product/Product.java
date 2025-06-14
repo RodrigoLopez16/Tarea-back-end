@@ -20,7 +20,7 @@ public class Product {
     private double price;
     private int quantity;
 
-    @JsonIgnore
+    //@JsonIgnore
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;

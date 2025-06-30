@@ -21,8 +21,8 @@ public class Product {
     private int quantity;
 
     //@JsonIgnore
-    @ManyToOne
-    @JoinColumn(name = "category_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
     @CreationTimestamp
